@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 extension UIView: HCExtensionCompatible {}
 extension HCExtension where Base: UIView {
     

@@ -36,4 +36,6 @@ extension HCExtensionCompatible {
     }
 }
 
+let bundle = Bundle(identifier: "HCExtension")
+
 //extension NSObject: HCExtensionCompatible {}

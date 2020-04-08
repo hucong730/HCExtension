@@ -1,1 +1,1 @@
-/Users/hucong/Desktop/HCExtension//HCExtension/HCExtension/Classes/Dictionary.swift
+/Users/hucong/Desktop/HCExtension/HCExtension-Example/../HCExtension/HCExtension/Classes/Dictionary.swift

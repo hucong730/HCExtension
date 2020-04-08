@@ -15,6 +15,10 @@
 		564AC5CA243D827F006155B3 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564AC5C3243D827F006155B3 /* Dictionary.swift */; };
 		564AC5CB243D827F006155B3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564AC5C4243D827F006155B3 /* UIColor.swift */; };
 		564AC5CC243D827F006155B3 /* HCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564AC5C5243D827F006155B3 /* HCExtension.swift */; };
+		56C122C6243DB58E001CDE7F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C122C5243DB58E001CDE7F /* UITableView.swift */; };
+		56C122C8243DBA80001CDE7F /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C122C7243DBA80001CDE7F /* UIApplication.swift */; };
+		56C122CA243DBB4A001CDE7F /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C122C9243DBB4A001CDE7F /* UIDevice.swift */; };
+		56C122D1243DCA49001CDE7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C122D0243DCA49001CDE7F /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		564AC5C3243D827F006155B3 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		564AC5C4243D827F006155B3 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		564AC5C5243D827F006155B3 /* HCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCExtension.swift; sourceTree = "<group>"; };
+		56C122C5243DB58E001CDE7F /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		56C122C7243DBA80001CDE7F /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		56C122C9243DBB4A001CDE7F /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		56C122D0243DCA49001CDE7F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 				564AC5C4243D827F006155B3 /* UIColor.swift */,
 				564AC5BF243D827F006155B3 /* UIImage.swift */,
 				564AC5BD243D8273006155B3 /* UIView.swift */,
+				56C122C5243DB58E001CDE7F /* UITableView.swift */,
+				56C122C7243DBA80001CDE7F /* UIApplication.swift */,
+				56C122C9243DBB4A001CDE7F /* UIDevice.swift */,
+				56C122D0243DCA49001CDE7F /* Constant.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -165,9 +177,13 @@
 				564AC5C9243D827F006155B3 /* Operators.swift in Sources */,
 				564AC5BE243D8273006155B3 /* UIView.swift in Sources */,
 				564AC5CC243D827F006155B3 /* HCExtension.swift in Sources */,
+				56C122CA243DBB4A001CDE7F /* UIDevice.swift in Sources */,
+				56C122C6243DB58E001CDE7F /* UITableView.swift in Sources */,
 				564AC5C6243D827F006155B3 /* UIImage.swift in Sources */,
 				564AC5C8243D827F006155B3 /* DispatchQueue.swift in Sources */,
+				56C122C8243DBA80001CDE7F /* UIApplication.swift in Sources */,
 				564AC5CA243D827F006155B3 /* Dictionary.swift in Sources */,
+				56C122D1243DCA49001CDE7F /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +326,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hc.HCExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -337,7 +353,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hc.HCExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

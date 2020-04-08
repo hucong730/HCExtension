@@ -17,6 +17,14 @@ class ViewController: UIViewController {
         
         let color = UIColor(hex: "#FF00FF")
         self.view.backgroundColor = color
+        
+        print(UIDevice.current.hc.modelName)
+        print(UIApplication.shared.hc.buildVersion)
+        print(UIApplication.shared.hc.version)
+        print(UIApplication.shared.hc.bundleId)
+        print(UIApplication.shared.hc.name)
+        print(UIApplication.shared.hc.idfa)
+        print(UIApplication.shared.hc.uuid)
     }
 
 

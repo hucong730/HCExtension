@@ -15,6 +15,8 @@
 		564AC599243D8149006155B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564AC597243D8149006155B3 /* LaunchScreen.storyboard */; };
 		564AC5A4243D8149006155B3 /* HCExtension_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564AC5A3243D8149006155B3 /* HCExtension_ExampleTests.swift */; };
 		564AC5AF243D8149006155B3 /* HCExtension_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564AC5AE243D8149006155B3 /* HCExtension_ExampleUITests.swift */; };
+		56C122CD243DBFF7001CDE7F /* HCExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C122CC243DBFF7001CDE7F /* HCExtension.framework */; };
+		56C122CE243DBFF7001CDE7F /* HCExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56C122CC243DBFF7001CDE7F /* HCExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		56C122CF243DBFF7001CDE7F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				56C122CE243DBFF7001CDE7F /* HCExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		564AC589243D8147006155B3 /* HCExtension-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCExtension-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		564AC58C243D8147006155B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		564AC5AA243D8149006155B3 /* HCExtension-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HCExtension-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		564AC5AE243D8149006155B3 /* HCExtension_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCExtension_ExampleUITests.swift; sourceTree = "<group>"; };
 		564AC5B0243D8149006155B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C122CC243DBFF7001CDE7F /* HCExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HCExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C122CD243DBFF7001CDE7F /* HCExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 				564AC5A2243D8149006155B3 /* HCExtension-ExampleTests */,
 				564AC5AD243D8149006155B3 /* HCExtension-ExampleUITests */,
 				564AC58A243D8147006155B3 /* Products */,
+				56C122CB243DBFF7001CDE7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +147,14 @@
 			path = "HCExtension-ExampleUITests";
 			sourceTree = "<group>";
 		};
+		56C122CB243DBFF7001CDE7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56C122CC243DBFF7001CDE7F /* HCExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +165,8 @@
 				564AC585243D8147006155B3 /* Sources */,
 				564AC586243D8147006155B3 /* Frameworks */,
 				564AC587243D8147006155B3 /* Resources */,
+				56C122CF243DBFF7001CDE7F /* Embed Frameworks */,
+				56C122D2243DD564001CDE7F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +282,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56C122D2243DD564001CDE7F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nln -s -f  ${SRCROOT}/../HCExtension/HCExtension/Classes/* ${SRCROOT}/../Sources/HCExtension/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		564AC585243D8147006155B3 /* Sources */ = {
@@ -435,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X9ZB94K6FH;
 				INFOPLIST_FILE = "HCExtension-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X9ZB94K6FH;
 				INFOPLIST_FILE = "HCExtension-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
