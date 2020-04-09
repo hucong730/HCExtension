@@ -87,6 +87,26 @@ extension HCExtension where Base: UIColor {
         return y > 0.75
     }
     
+    /// 根据颜色生成图片，1个像素大小
+    public var image: UIImage? {
+        toImage(CGSize(width: 0.5, height: 0.5))
+    }
+    
+    /// 根据颜色生成图片，可以指定大小
+    /// - Parameter withSize: 需要生成图片的大小
+    /// - Returns: 图片
+    public func toImage(_ withSize: CGSize) -> UIImage? {
+        let rect = CGRect(origin: .zero, size: withSize)
+        UIGraphicsBeginImageContext(rect.size);
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        context.setFillColor(base.cgColor)
+        context.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
 }
 
 #endif

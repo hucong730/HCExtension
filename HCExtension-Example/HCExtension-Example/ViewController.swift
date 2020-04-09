@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         let color = UIColor(hex: "#FF00FF")
         self.view.backgroundColor = color
-        
+
         print(UIDevice.current.hc.modelName)
         print(UIApplication.shared.hc.buildVersion)
         print(UIApplication.shared.hc.version)
@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         print(UIApplication.shared.hc.name)
         print(UIApplication.shared.hc.idfa)
         print(UIApplication.shared.hc.uuid)
+ 
+        
+        UITabBar.appearance().backgroundImage = UIColor.white.hc.image
+        UITabBar.appearance().shadowImage = UIColor.red.hc.image
     }
 
 
